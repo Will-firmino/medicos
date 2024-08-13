@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.senacshoes.api.paciente.DadosCadastroPaciente;
+import com.senacshoes.api.model.paciente.DadosCadastroPaciente;
 
 @RestController
 @RequestMapping("pacientes")
