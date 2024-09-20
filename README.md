@@ -1,19 +1,25 @@
 # medicos
 
 ```mermaid
-{
-"nome": "João Ferreira",
-"email": "joao.ferreira@med.br",
-"crm": "123456",
-"especialidade": "ortopedia",
-"endereco": {
-    "logradouro": "rua 1",
-    "bairro": "bairro",
-    "cep": "12345678",
-    "cidade": "Rio de Janeiro",
-    "uf": "RJ",
-    "numero": "1",
-    "complemento": "Anexo B"
+classDiagram
+    class Usuario {
+        -String nome
+        -String email
+        -String crm
+        -String especialidade
+        +Endereco endereco
     }
-}
+
+    class Endereco {
+        -String logradouro
+        -String bairro
+        -String cep
+        -String cidade
+        -String uf
+        -String numero
+        -String complemento
+    }
+
+    Usuario --> Endereco
+
 ```
